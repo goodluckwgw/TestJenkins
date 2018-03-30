@@ -92,7 +92,7 @@ android {
                 outDirectory = BUILD_PATH_LOCAL
                 newName = APPNAME+"-v"+APP_VERSION + '-' + variant.productFlavors[0].name + '-' + variant.buildType.name + '.apk'
             }
-            output.outputFile = new File(outDirectory+"/"+timeNow, newName)
+            output.outputFile = new File(outDirectory, newName)
         }
     }
 }
